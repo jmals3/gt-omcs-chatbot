@@ -10,6 +10,7 @@ namespace Luis
 {
     public class LUISGTOMCSClient
     {
+        //This code was borrowed from reference #2 in my paper
         public static async Task<GTLUIS> ParseUserInput(string strInput)
         {
             string strRet = string.Empty;
@@ -36,7 +37,7 @@ namespace Luis
         public string query { get; set; }
         public Topscoringintent topScoringIntent { get; set; }
         public Intent[] intents { get; set; }
-        public object[] entities { get; set; }
+        public Entity[] entities { get; set; }
     }
 
     public class Topscoringintent
@@ -50,5 +51,12 @@ namespace Luis
         public string intent { get; set; }
         public float score { get; set; }
     }
-
+    public class Entity
+    {
+        public string entity { get; set; }
+        public string type { get; set; }
+        public int startIndex { get; set; }
+        public int endIndex { get; set; }
+        public float score { get; set; }
+    }
 }
