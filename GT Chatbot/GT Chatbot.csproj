@@ -260,6 +260,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="NLP.cs" />
     <Compile Include="ResponseGenerator.cs" />
     <Compile Include="Luis.cs" />
     <Compile Include="Controllers\MessagesController.cs" />
