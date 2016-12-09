@@ -9,17 +9,6 @@ namespace GT_Chatbot
 {
     public class Sentence
     {
-        #region orig plan
-        //StanfordCoreNLP pipeline = new StanfordCoreNLP();
-        //Annotation annotation = new Annotation();
-
-        //public Sentence(StanfordCoreNLP p, Annotation a)
-        //{
-        //    pipeline = p;
-        //    annotation = a;
-        //}
-        #endregion
-
         int id;
         string text;
         string speaker;
